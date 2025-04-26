@@ -886,7 +886,10 @@ h1 {
     .info-column{
         background-color: transparent;
         padding: 0;
+        box-shadow: none;
     }
+
+    
 }
 
 @media (max-width: 480px) {
@@ -1524,6 +1527,10 @@ h1 {
         right: auto;
         margin-top: 1rem;
     }
+
+    .contain-box{
+        padding: 0.9rem;
+    }
     
     .heading2 {
         text-align: center;
@@ -1536,6 +1543,10 @@ h1 {
 
     .logo-card, .graphic-card{
         padding-bottom: 2px;
+    }
+
+    .website-gallery, .framer-gallery{
+        height: 150px;
     }
 }
 
@@ -1746,6 +1757,7 @@ button{
     .projects-grid {
         max-height: none;
         grid-template-columns: 1fr;
+        padding: 0.5rem;
     }
 
     .project-card {
@@ -1762,8 +1774,8 @@ button{
         margin-bottom: 0.8rem;
     }
 
-    .container3 {
-        padding: 1rem;
+    .container3{
+        padding: 0.7rem;
     }
 
     .title-section {
@@ -2061,9 +2073,9 @@ button{
 .metrics-row {
     display: flex;
     justify-content: center; /* Center the stat cards */
-    gap: 20px;
+    gap: 10px;
     margin-top: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .metric-card {
