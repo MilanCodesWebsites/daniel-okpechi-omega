@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Okpechi - UI/UX & Graphic Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Daniel Okpechi - UI/UX Designer & Frontend Developer" />
+    <meta property="og:description" content="Designing sleek, user-focused experiences with a blend of creativity, strategy, and code." />
+    <meta property="og:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/e3bfb8c2-6f52-4175-a752-da18921638f2-Okpechi.png" />
+    <meta property="og:image:alt" content="Okpechi - Profile image of a UI/UX designer and frontend developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://daniel-okpechi-omega.vercel.app" /> <!-- Replace with your actual URL -->
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Okpechi - UI/UX Designer & Frontend Developer" />
+    <meta name="twitter:description" content="Blending design, empathy, and frontend magic to craft seamless digital products." />
+    <meta name="twitter:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/e3bfb8c2-6f52-4175-a752-da18921638f2-Okpechi.png" />
+    <meta name="twitter:image:alt" content="Okpechi - Profile image of a UI/UX designer and frontend developer" />
+    <link rel="shortcut icon" href="imgs/Daniel Okpechi.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="imgs/background.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <div class="logo-circle">
+                    <span class="logo-plus">+</span>
+                </div>
+                <span class="logo-text">Daniel</span>
+            </div>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#" class="cta-button">
+                <i data-lucide="phone"></i>
+                Contact
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i data-lucide="menu" style="color: white;"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <div class="logo-circle">
+                    <span class="logo-plus">+</span>
+                </div>
+                <span class="logo-text">Daniel</span>
+            </div>
+            <button class="close-menu" aria-label="Close menu">✕</button>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li class="active">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <br>
+            <div class="sign-cont" style="text-align: center;">
+                <img src="imgs/Daniel Okpechi.png" width="150px" alt="">
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="tag">
+                    <span>© UI/UX & Graphic Designer</span>
+                </div>
+                
+                <h1>Daniel<span class="light-text">Okpechi</span></h1>
+                
+                <p class="hero-description">
+                    I'm a versatile designer specializing in graphic, web, and product design to help grow your business. Let's build something great!
+                </p>
+                
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-dark">See All Projects</a>
+                    <a href="#contact" class="btn btn-light">Download CV</a>
+                </div>
+            </div>
+
+            <!-- Floating Testimonials -->
+            <div class="floating-testimonials">
+                <div class="testimonial-card card-1">
+                    <p>" Working with him was a game changer!"</p>
+                    <span class="author">- Anthony Asika</span>
+                </div>
+                <div class="testimonial-card card-2">
+                    <p>"We increased our conversions by 200%"</p>
+                    <span class="author">- James Hardwick</span>
+                </div>
+                <div class="dot-indicator"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="overlay-div">
+        <div class="portfolio-marquee">
+            <div class="marquee-track">
+                <!-- Portfolio items - first set -->
+                <div class="portfolio-item">
+                    <img src="imgs/project1.png" alt="Apple Vision Pro Landing page" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="imgs/project2.png" alt="Bloodbank App Design" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="imgs/project3.png" alt="Finance app UI" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="imgs/project4.png" alt="E-commerce design" class="portfolio-image">
+                </div>
+                
+                <!-- Duplicate items to create seamless loop -->
+                <div class="portfolio-item">
+                    <img src="imgs/project1.png" alt="Minimalist UI design" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="imgs/project2.png" alt="Nature website design" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="imgs/project3.png" alt="Finance app UI" class="portfolio-image">
+                </div>
+                <div class="portfolio-item">
+                    <img src="imgs/project4.png" alt="E-commerce design" class="portfolio-image">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Image Modal -->
+        <div id="imageModal" class="modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <img id="modalImage" class="modal-image" src="/placeholder.svg" alt="">
+                <div id="modalCaption" class="modal-caption"></div>
+                <div class="modal-nav">
+                    <button id="prevButton">&lsaquo;</button>
+                    <button id="nextButton">&rsaquo;</button>
+                </div>
+            </div>
+        </div>
+        <div class="cta-buttons" style="margin: auto; text-align: center;"> 
+            <a href="#projects" class="btn btn-dark" style="text-align: center; margin: auto;">See All Projects</a>
+        </div>
+        <br>
+
+        <section class="portfolio-section">
+            <div class="container">
+                <!-- Header -->
+                <div class="header2">
+                    <span class="small-title">Expert Designer</span>
+                    <h1 class="main-title">More About <span class="text-muted">Me</span></h1>
+                    <p class="subtitle">Based on 4+ years of designing intuitive web and mobile application experiences.</p>
+                </div>
+    
+                <!-- Main Content -->
+                <div class="content-wrapper">
+                    <!-- Left Column - Profile -->
+                    <div class="profile-column">
+                        <div class="profile-image-container">
+                            <img src="imgs/main.jpg" alt="Daniel Okpechi" class="profile-image">
+                            <div class="availability-badge">
+                                <span class="availability-text">Available for work</span>
+                                <span class="availability-dot"></span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <div class="social-icons">
+                                <a href="#" class="social-icon" aria-label="Twitter">
+                                    <i data-lucide="twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Instagram">
+                                    <i data-lucide="instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Dribbble">
+                                    <i data-lucide="dribbble"></i>
+                                </a>
+                            </div>
+                            
+                            <a href="#contact" class="connect-button">Connect with me</a>
+                        </div>
+                    </div>
+    
+                    <!-- Right Column - Info -->
+                    <div class="info-column">
+                        <div class="bio-section">
+                            <p class="bio-text">
+                                I'm Daniel Okpechi, a multidisciplinary Web Designer & Developer based in the heart of Lagos. I specialize in creating intuitive digital experiences that align with your business goals.
+                            </p>
+                            <br>
+                            <p class="bio-text">
+                                With a strong foundation in both design thinking and frontend development, I bridge the gap between creative ideas and functional, responsive code. Whether it’s designing clean user interfaces or bringing them to life through smooth, pixel-perfect layouts — I focus on delivering work that combines visual appeal with real-world usability.
+                            </p>
+                              <br>
+                            <p class="bio-text">
+                                When it comes to UI/UX design, I’m equal parts artist, problem-solver, and occasional pixel-perfectionist. I believe great design isn’t just about looking good — it’s about making people’s lives easier (and maybe even making them smile while they’re at it). Whether I’m mapping out user flows, building wireframes, or debating the emotional impact of a button's hover state, I bring empathy, curiosity, and just the right amount of caffeine to every project. If the user doesn’t notice the design, I take it as a win — because that means it’s doing exactly what it should.
+                            </p>
+                        </div>
+    
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <section class="tools-section">
+        <div class="section-header">
+            <h2 class="section-title">My Tools and Stack</h2>
+            <p class="section-subtitle">These are the professional tools I use to design, prototype, and manage my projects efficiently.</p>
+        </div>
+        
+        <div class="tools-grid">
+            <!-- Figma Card -->
+            <div class="tool-card">
+                <div class="tool-logo">
+                    <img src="imgs/figma-1-logo-svgrepo-com.svg" alt="Figma Logo">
+                </div>
+                <div class="tool-content">
+                    <h3 class="tool-title">Figma</h3>
+                    <p class="tool-description">I use Figma to collaborate with my team on UI/UX designs in real-time. It's my go-to tool for creating wireframes, interactive prototypes, and design systems that ensure consistency across projects.</p>
+                </div>
+            </div>
+            
+            <!-- Adobe XD Card -->
+            <div class="tool-card">
+                <div class="tool-logo">
+                    <img src="imgs/adobe-xd-logo-svgrepo-com.svg" alt="Adobe XD Logo">
+                </div>
+                <div class="tool-content">
+                    <h3 class="tool-title">Adobe XD</h3>
+                    <p class="tool-description">I use Adobe XD to create detailed user interfaces and interactive prototypes. Its integration with other Adobe products helps me streamline my workflow when working on complex design projects.</p>
+                </div>
+            </div>
+            
+            <!-- Whimsical Card -->
+            <div class="tool-card">
+                <div class="tool-logo">
+                    <img src="imgs/Whimsical Icon.svg" alt="Whimsical Logo">
+                </div>
+                <div class="tool-content">
+                    <h3 class="tool-title">Whimsical</h3>
+                    <p class="tool-description">I use Whimsical to quickly visualize ideas and create flowcharts for user journeys. It helps me communicate complex processes to stakeholders and team members in an intuitive, visual format.</p>
+                </div>
+            </div>
+            
+            <!-- Miro Card -->
+            <div class="tool-card">
+                <div class="tool-logo">
+                    <img src="imgs/miro.png" alt="Miro Logo">
+                </div>
+                <div class="tool-content">
+                    <h3 class="tool-title">Miro</h3>
+                    <p class="tool-description">I use Miro as my digital whiteboard for brainstorming sessions and remote workshops. It's essential for my collaborative planning process, especially when working with distributed teams across different time zones.</p>
+                </div>
+            </div>
+            
+            <!-- ClickUp Card -->
+            <div class="tool-card">
+                <div class="tool-logo">
+                    <img src="imgs/idfty-HNVU_1745612724993.svg" alt="ClickUp Logo">
+                </div>
+                <div class="tool-content">
+                    <h3 class="tool-title">ClickUp</h3>
+                    <p class="tool-description">I use ClickUp to manage all my project tasks and timelines. It helps me stay organized with its customizable workflows, allowing me to track progress and meet deadlines consistently across multiple projects.</p>
+                </div>
+            </div>
+            
+            <!-- Zeplin Card -->
+            <div class="tool-card">
+                <div class="tool-logo">
+                    <img src="imgs/idNwGA5I1h_1745612771421.svg" alt="Zeplin Logo">
+                </div>
+                <div class="tool-content">
+                    <h3 class="tool-title">Zeplin</h3>
+                    <p class="tool-description">I use Zeplin to bridge the gap between design and development. It allows me to share design specs, assets, and code snippets with developers, ensuring my designs are implemented exactly as intended.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="overlay-div">
+
+    <div class="work-experience-section">
+
+        <h1>Work Experience</h1>
+      
+        <div class="job">
+          <h2><a href="https://www.techwingsglobal.com" target="_blank">TechWings Global LLC, United States</a></h2>
+          <h3>Product Designer (Remote) | Jul 2024 – Present</h3>
+          <ul>
+            <li>Spearheaded the design of an evaluation app, enhancing the candidate assessment process.</li>
+            <li>Optimized candidate assessment workflows through evaluator feedback.</li>
+            <li>Implemented a unified design system for consistency.</li>
+            <li>Built a language scheduling app with bookings, payments, and learning modules.</li>
+            <li>Launched an online platform for course registration and class scheduling.</li>
+          </ul>
+          <div class="skills">
+            <div class="skill-badge"><i class="fas fa-pen-nib"></i> UX Design</div>
+            <div class="skill-badge"><i class="fas fa-code"></i> HTML/CSS</div>
+            <div class="skill-badge"><i class="fas fa-layer-group"></i> Design Systems</div>
+            <div class="skill-badge"><i class="fas fa-calendar-alt"></i> Scheduling</div>
+          </div>
+        </div>
+      
+        <div class="job">
+          <h2><a href="https://www.landview.com.ng" target="_blank">LandView Property Investment LTD, Lagos</a></h2>
+          <h3>Product Designer | Jan 2023 – Jun 2024</h3>
+          <ul>
+            <li>Enhanced UX across platforms, reducing bounce rates by 25%.</li>
+            <li>Boosted search efficiency by 20% with analytics-driven redesign.</li>
+            <li>Improved user retention by 18% using user-centric design.</li>
+            <li>Redesigned ABN Realtors website and app with intuitive navigation.</li>
+            <li>Conducted user research to align design with user needs.</li>
+            <li>Maintained responsive company website with optimal performance.</li>
+          </ul>
+          <div class="skills">
+            <div class="skill-badge"><i class="fas fa-chart-line"></i> Analytics</div>
+            <div class="skill-badge"><i class="fas fa-users"></i> User Research</div>
+            <div class="skill-badge"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+            <div class="skill-badge"><i class="fas fa-search"></i> UX Optimization</div>
+          </div>
+        </div>
+      
+        <div class="job">
+          <h2><a href="https://www.totalenergies.com" target="_blank">TotalEnergies EP, Lagos</a></h2>
+          <h3>Product Designer (Software Engineer) Intern | Mar 2023 – Jul 2023</h3>
+          <ul>
+            <li>Led 50 interns in IT support and tech operations.</li>
+            <li>Deployed and maintained 100+ workstations.</li>
+            <li>Resolved 300+ support requests across departments.</li>
+            <li>Streamlined support processes to enhance resolution speed.</li>
+            <li>Coordinated departmental IT needs to minimize downtime.</li>
+          </ul>
+          <div class="skills">
+            <div class="skill-badge"><i class="fas fa-tools"></i> IT Support</div>
+            <div class="skill-badge"><i class="fas fa-network-wired"></i> Infrastructure</div>
+            <div class="skill-badge"><i class="fas fa-user-cog"></i> Team Leadership</div>
+          </div>
+        </div>
+      
+        <div class="job">
+          <h2><a href="https://www.sterling.ng" target="_blank">Sterling Bank Plc, Lagos</a></h2>
+          <h3>Product Designer Intern | Jun 2022 – Dec 2022</h3>
+          <ul>
+            <li>Cut booking errors by 20% with a streamlined interface.</li>
+            <li>Reduced task assignment time by 30% with a Figma-designed UI.</li>
+            <li>Redesigned internal task and travel systems for efficiency.</li>
+            <li>Improved task completion rates through better UX.</li>
+          </ul>
+          <div class="skills">
+            <div class="skill-badge"><i class="fab fa-figma"></i> Figma</div>
+            <div class="skill-badge"><i class="fas fa-cogs"></i> Workflow Design</div>
+            <div class="skill-badge"><i class="fas fa-plane"></i> Travel Systems</div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<section class="process-section">
+    <div class="process-header">
+        <p class="how-it-works">👋 How it works</p>
+        <h2 class="process-title">Process <span>Is Everything</span></h2>
+        <p class="process-subtitle">Simple, streamlined process is what get's you results</p>
+    </div>
+    
+    <div class="process-steps">
+        <!-- Step 1 -->
+        <div class="step-card">
+            <span class="step-number">1</span>
+            <i data-lucide="mouse-pointer-click"></i>
+            <h3 class="step-title">Let's Get In Touch</h3>
+            <p class="step-description">Start by reaching out through my contact page. Fill out the form or book a call to discuss your project, goals, and ideas.</p>
+            <button class="step-button">Step 1</button>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="step-card">
+            <span class="step-number">2</span>
+            <i data-lucide="wand-sparkles"></i>
+            <h3 class="step-title">Grab Your Designs</h3>
+            <p class="step-description">Tell me your unique vision, and I'll create stunning, functional designs that perfectly align with your goals.</p>
+            <button class="step-button">Step 2</button>
+        </div>
+        
+        <!-- Step 3 -->
+        <div class="step-card">
+            <span class="step-number">3</span>
+            <i data-lucide="git-branch"></i>
+            <h3 class="step-title">Kickstart Development</h3>
+            <p class="step-description">I expertly transform your designs into a powerful, scalable solution, fully ready to launch.</p>
+            <button class="step-button">Step 3</button>
+        </div>
+        
+        <!-- Step 4 -->
+        <div class="step-card">
+            <span class="step-number">4</span>
+            <i data-lucide="rocket"></i>
+            <h3 class="step-title">And Hand Over</h3>
+            <p class="step-description">Receive a fully tested, polished, and high-quality product tailored to your needs with ongoing support.</p>
+            <button class="step-button">Step 4</button>
+        </div>
+    </div>
+    
+    <div class="process-footer">
+        <div class="process-footer-content">
+            <h3 class="process-footer-title">I am with you in every step</h3>
+            <p class="process-footer-subtitle">alongside you at each step for seamless experience</p>
+        </div>
+        <div class="process-footer-buttons">
+            <a href="#contact" class="footer-button button-primary">See All Projects</a>
+        </div>
+    </div>
+</section>
+
+
+<div class="overlay-div">
+    <div class="contain-box">
+        <!-- heading Section -->
+        <div class="heading2">
+            <div class="service-label">
+                <i class="fa-solid fa-palette"></i>
+                <span>Design services</span>
+            </div>
+            <h1>Design <span class="text-gray">Services</span></h1>
+            <p class="subtitle2">Explore a suite of design services to elevate your brand.</p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Website Design -->
+                <div class="service-card website-card">
+                    <div class="service-heading">
+                        <i data-lucide="code"></i>
+                        <h2>Front-end Development</h2>
+                    </div>
+                    <p>I speak fluent frontend — turning ideas into slick web and mobile magic, one line of code at a time.</p>
+                    <div class="website-gallery">
+                      
+                    </div>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="service-card graphic-card">
+                    <div class="service-heading">
+                        <i data-lucide="pen-tool"></i>
+                        <h2>Visual Design</h2>
+                    </div>
+                    <p>My time at Sterling Bank PLC fine-tuned my design skills — now I see colors, fonts, and layouts with the kind of clarity that lets me effortlessly blend them into designs that not only look great but also feel intuitive, making everything just <i>click</i>.</p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Logo Design -->
+                <div class="service-card logo-card">
+                    <div class="service-heading">
+                        <i data-lucide="spline-pointer"></i>
+                        <h2>User Research</h2>
+                    </div>
+                    <p>I design digital products that balance beauty, function, and a bit of fun — creating experiences that not only solve real problems, but feel so intuitive they almost disappear. Bonus points if I can make someone smile along the way.</p>
+                </div>
+
+                <!-- Framer Design -->
+                <div class="service-card framer-card">
+                    <div class="service-heading">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h2>Product Design</h2>
+                    </div>
+                    <p>Designing digital products that feel right, work well, and make users smile (yes, even with buttons).</p>
+                    <div class="framer-gallery">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Marquee Section -->
+        <div class="skills-section">
+            <!-- First row - left to right -->
+            <div class="marquee-contain-box">
+                <div class="marquee marquee-ltr">
+                    <div class="marquee-content">
+                        <div class="skill-item"><i class="fa-solid fa-image"></i> Graphics</div>
+                        <div class="skill-item"><i class="fa-solid fa-pen"></i> Copywriting</div>
+                        <div class="skill-item"><i class="fa-solid fa-images"></i> Posters</div>
+                        <div class="skill-item"><i class="fa-solid fa-window-maximize"></i> Framer Migration</div>
+                        <div class="skill-item"><i class="fa-solid fa-video"></i> Video & Motion Graphics</div>
+                        <div class="skill-item"><i class="fa-solid fa-copyright"></i> Copyright</div>
+                        <!-- Duplicate for continuous scrolling -->
+                        <div class="skill-item"><i class="fa-solid fa-image"></i> Graphics</div>
+                        <div class="skill-item"><i class="fa-solid fa-pen"></i> Copywriting</div>
+                        <div class="skill-item"><i class="fa-solid fa-images"></i> Posters</div>
+                        <div class="skill-item"><i class="fa-solid fa-window-maximize"></i> Framer Migration</div>
+                        <div class="skill-item"><i class="fa-solid fa-video"></i> Video & Motion Graphics</div>
+                        <div class="skill-item"><i class="fa-solid fa-copyright"></i> Copyright</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second row - right to left -->
+            <div class="marquee-contain-box">
+                <div class="marquee marquee-rtl">
+                    <div class="marquee-content">
+                        <div class="skill-item"><i class="fa-solid fa-file"></i> Landing Pages</div>
+                        <div class="skill-item"><i class="fa-solid fa-bolt"></i> Optimization</div>
+                        <div class="skill-item"><i class="fa-solid fa-code"></i> Custom Code</div>
+                        <div class="skill-item"><i class="fa-solid fa-search"></i> SEO</div>
+                        <div class="skill-item"><i class="fa-solid fa-icons"></i> Icons</div>
+                        <div class="skill-item"><i class="fa-solid fa-share-nodes"></i> Social Media</div>
+                        <!-- Duplicate for continuous scrolling -->
+                        <div class="skill-item"><i class="fa-solid fa-file"></i> Landing Pages</div>
+                        <div class="skill-item"><i class="fa-solid fa-bolt"></i> Optimization</div>
+                        <div class="skill-item"><i class="fa-solid fa-code"></i> Custom Code</div>
+                        <div class="skill-item"><i class="fa-solid fa-search"></i> SEO</div>
+                        <div class="skill-item"><i class="fa-solid fa-icons"></i> Icons</div>
+                        <div class="skill-item"><i class="fa-solid fa-share-nodes"></i> Social Media</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="cursor-follower">
+        <span>View this project</span>
+    </div>
+
+    <div class="container3">
+        <main>
+            <div class="title-section">
+                <div class="title-container3">
+                    <h1>Recent <span class="text-gray">Designs</span></h1>
+                    <p>Showcase of some of my recent sleek projects</p>
+                </div>
+                <div class="process-footer-buttons">
+                    <a href="#contact" class="footer-button button-primary">See All Projects</a>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 - Social Media Growth -->
+                <div class="project-card">
+                    <div class="project-img-container3">
+                        <div class="arrow-corner top-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                        <img src="imgs/project8.png" alt="Social Media Growth Website" class="project-img">
+                    </div>
+                </div>
+
+                <!-- Project 2 - Dashboard -->
+                <div class="project-card">
+                    <div class="project-img-container3">
+                        <div class="arrow-corner bottom-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                        <img src="imgs/project1.png" alt="Dashboard UI" class="project-img">
+                    </div>
+                </div>
+
+                <!-- Project 3 - Better Designer -->
+                <div class="project-card">
+                    <div class="project-img-container3">
+                        <div class="arrow-corner top-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                        <img src="imgs/project4.png" alt="Better Designer Website" class="project-img">
+                    </div>
+                </div>
+
+                <!-- Project 4 - Bio Website -->
+                <div class="project-card">
+                    <div class="project-img-container3">
+                        <div class="arrow-corner bottom-right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </div>
+                        <img src="imgs/project5.png" alt="Bio Website" class="project-img">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <br>
+
+    <div class="overlay-div">
+        <div class="container5">
+            <!-- Hero Section -->
+            <section class="hero-section2">
+                <div class="tag">🎯 Happy Clients</div>
+                <h1 class="heading4">Clients <span>Love Me</span></h1>
+                <p class="subheading2">Trusted by 20+ happy clients</p>
+                
+                <div class="metrics-row">
+                    <div class="metric-card">
+                        <i data-lucide="folder-git-2" class="metric-icon" width="30" height="30"></i>
+                        <div class="metric-value">24+</div>
+                        <div class="metric-label">Projects Completed</div>
+                    </div>
+                    <div class="metric-card">
+                        <i data-lucide="code" class="metric-icon" width="30" height="30"></i>
+                        <div class="metric-value">120k+</div>
+                        <div class="metric-label">lines of code written</div>
+                    </div>
+                    <div class="metric-card">
+                        <i data-lucide="star" class="metric-icon" width="24" height="24"></i>
+                        <div class="metric-value">4.8</div>
+                        <div class="metric-label">Average Rating</div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Testimonials Section -->
+            <section class="testimonials-grid2">
+                <!-- Card 1 -->
+                <div class="testimonial-card2">
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://framerusercontent.com/images/eFraHAe16muHsBuOQT8J7PtnM.png" alt="Client avatar">
+                        </div>
+                        <div class="client-details">
+                            <div class="client-name">Will Smith</div>
+                            <div class="client-company">Harper education</div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <span class="rating-score">5.0</span>
+                        <div class="rating-stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text2">The designs exceeded our expectations! Every element felt purposeful, creating a seamless and visually stunning brand identity</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="testimonial-card2">
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://framerusercontent.com/images/54tqpXnovhmg1DaaTUMYucwnE.png?scale-down-to=1024" alt="Client avatar">
+                        </div>
+                        <div class="client-details">
+                            <div class="client-name">Emma Johnson</div>
+                            <div class="client-company">Bright Solutions</div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <span class="rating-score">4.9</span>
+                        <div class="rating-stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text2">Incredible attention to detail. The work delivered was exactly what we needed to take our brand to the next level.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="testimonial-card2">
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://framerusercontent.com/images/DeANEXSHfUPawiwrcmj8Tkiib1o.jpg" alt="Client avatar">
+                        </div>
+                        <div class="client-details">
+                            <div class="client-name">David Chen</div>
+                            <div class="client-company">Tech Innovate</div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <span class="rating-score">5.0</span>
+                        <div class="rating-stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+            
+                        </div>
+                    </div>
+                    <p class="testimonial-text2">Working together was a breeze. The final product exceeded our expectations and helped us increase conversions by 40%.</p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="testimonial-card2">
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <img src="https://framerusercontent.com/images/hmr5CgOg36xVV5pHu3aQPFGu9U.png?scale-down-to=2048" alt="Client avatar">
+                        </div>
+                        <div class="client-details">
+                            <div class="client-name">Sarah Miller</div>
+                            <div class="client-company">Growth Partners</div>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <span class="rating-score">4.8</span>
+                        <div class="rating-stars">
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                            <i data-lucide="star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text2">The designs were not only beautiful but also highly functional. Our users love the new interface and engagement has increased.</p>
+                </div>
+            </section>
+        </div>    
+    </div>
+
+    <div class="faq_c7d9e">
+        <div class="faq_header_a3b2f">
+            <div class="faq_title_wrapper_k8j2l">
+                <h1 class="faq_title_e8f4c">Frequently Asked <span>Questions</span></h1>
+            </div>
+            <p class="faq_description_m4n7p">Find answers to common questions about our services, process, and pricing. If you can't find what you're looking for, feel free to contact us directly.</p>
+        </div>
+
+        <div class="faq_item_b6d1e active_i4j6k">
+            <div class="faq_question_f2a7d">
+                <h3 class="faq_question_text_h9c3e">What services do you offer?</h3>
+                <i class="faq_icon_c2e9f" data-lucide="plus"></i>
+            </div>
+            <div class="faq_answer_d5e8b">
+                <p class="faq_answer_text_g7f2e">I specialize in web design, branding, UI/UX, and Figma/Framer development, creating modern, user-friendly experiences tailored to your needs.</p>
+            </div>
+        </div>
+
+        <div class="faq_item_b6d1e">
+            <div class="faq_question_f2a7d">
+                <h3 class="faq_question_text_h9c3e">How do I start working with you?</h3>
+                <i class="faq_icon_c2e9f" data-lucide="plus"></i>
+            </div>
+            <div class="faq_answer_d5e8b">
+                <p class="faq_answer_text_g7f2e">Simply reach out through the contact form or email. We'll schedule an initial consultation to discuss your project requirements, timeline, and budget before proceeding.</p>
+            </div>
+        </div>
+
+        <div class="faq_item_b6d1e">
+            <div class="faq_question_f2a7d">
+                <h3 class="faq_question_text_h9c3e">What design tools do you use?</h3>
+                <i class="faq_icon_c2e9f" data-lucide="plus"></i>
+            </div>
+            <div class="faq_answer_d5e8b">
+                <p class="faq_answer_text_g7f2e">I primarily work with Figma for UI/UX design, Adobe Creative Suite for graphics, and Framer for interactive prototypes. I also use various specialized tools depending on project requirements.</p>
+            </div>
+        </div>
+
+
+        
+        <div class="faq_item_b6d1e">
+            <div class="faq_question_f2a7d">
+                <h3 class="faq_question_text_h9c3e">Do you offer development services?</h3>
+                <i class="faq_icon_c2e9f" data-lucide="plus"></i>
+            </div>
+            <div class="faq_answer_d5e8b">
+                <p class="faq_answer_text_g7f2e">Yes, I offer front-end development services and can collaborate with back-end developers for full-stack projects. My development expertise includes HTML, CSS, JavaScript, and modern frameworks like React.</p>
+            </div>
+        </div>
+
+        <div class="faq_item_b6d1e">
+            <div class="faq_question_f2a7d">
+                <h3 class="faq_question_text_h9c3e">What is your pricing structure?</h3>
+                <i class="faq_icon_c2e9f" data-lucide="plus"></i>
+            </div>
+            <div class="faq_answer_d5e8b">
+                <p class="faq_answer_text_g7f2e">I offer both project-based and hourly pricing options. Project-based pricing is determined by scope, complexity, and timeline. For ongoing work, I provide retainer packages with discounted rates. I'll provide a detailed quote after our initial consultation.</p>
+            </div>
+        </div>
+
+        <div class="faq_item_b6d1e">
+            <div class="faq_question_f2a7d">
+                <h3 class="faq_question_text_h9c3e">Can you redesign my existing website?</h3>
+                <i class="faq_icon_c2e9f" data-lucide="plus"></i>
+            </div>
+            <div class="faq_answer_d5e8b">
+                <p class="faq_answer_text_g7f2e">Website redesigns are a core service I offer. I'll analyze your current site, identify improvement areas, and create a modern, user-friendly design that aligns with your brand and business goals.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="cta-section">
+            <h2 class="cta-heading">Ready to make something kickass?</h2>
+            <h3 class="cta-subheading">Let's get on a call.</h3>
+            <div class="footer-info">
+                <h4>Portfolio Creator.</h4>
+                <p>4353 Delaware Avenue, San Francisco, USA</p>
+                <p class="email">
+                  <i data-lucide="mail" class="icon-small"></i>
+                  hi@thefolio.com
+                </p>
+              </div>
+          </div>
+          
+          <div class="footer-content">
+            
+            
+            <div class="footer-social">
+              <a href="#" class="social-icon" aria-label="Behance">
+                <i class="fa-brands fa-behance"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <i data-lucide="instagram" class="icon"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-icon" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="bottom-blur-bar">
+        
+      </div>
+      
+      <script src="https://kit.fontawesome.com/b95a562003.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
