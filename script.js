@@ -191,3 +191,88 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Create cursor elements
+    const cursor = document.createElement('div');
+    cursor.classList.add('cursor');
+    document.body.appendChild(cursor);
+
+    const cursorDot = document.createElement('div');
+    cursorDot.classList.add('cursor-dot');
+    document.body.appendChild(cursorDot);
+
+    // Create trail elements
+    const trailCount = 5;
+    const trails = [];
+    
+    for (let i = 0; i < trailCount; i++) {
+      const trail = document.createElement('div');
+      trail.classList.add('trail');
+      trail.style.opacity = 1 - (i / trailCount);
+      trail.style.width = `${10 - i}px`;
+      trail.style.height = `${10 - i}px`;
+      document.body.appendChild(trail);
+      trails.push({
+        element: trail,
+        x: 0,
+        y: 0
+      });
+    }
+
+    // Track mouse position
+    let mouseX = 0;
+    let mouseY = 0;
+    
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    // Handle cursor states
+    document.addEventListener('mousedown', () => {
+      cursor.classList.add('active');
+    });
+
+    document.addEventListener('mouseup', () => {
+      cursor.classList.remove('active');
+    });
+
+    // Handle hover states
+    const hoverElements = document.querySelectorAll('.button');
+    
+    hoverElements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
+        cursor.classList.add('hover');
+      });
+      
+      element.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hover');
+      });
+    });
+
+    // Animation loop for smooth cursor movement
+    function animateCursor() {
+      // Update main cursor position
+      cursor.style.left = `${mouseX}px`;
+      cursor.style.top = `${mouseY}px`;
+      
+      // Update cursor dot position (follows exactly)
+      cursorDot.style.left = `${mouseX}px`;
+      cursorDot.style.top = `${mouseY}px`;
+      
+      // Update trail positions with delay
+      trails.forEach((trail, index) => {
+        // Create a delay effect
+        trail.x += (mouseX - trail.x) * (0.2 - index * 0.03);
+        trail.y += (mouseY - trail.y) * (0.2 - index * 0.03);
+        
+        trail.element.style.left = `${trail.x}px`;
+        trail.element.style.top = `${trail.y}px`;
+      });
+      
+      requestAnimationFrame(animateCursor);
+    }
+    
+    animateCursor();
+  });
