@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Satoshi', sans-serif;
     background-color: var(--primary-bg);
     color: var(--text-color);
     overflow-x: hidden;
@@ -1563,7 +1563,7 @@ h1 {
 }
 
 button{
-    font-family: "DM Sans";
+    font-family: "Satoshi";
 }
 
 .secondary {

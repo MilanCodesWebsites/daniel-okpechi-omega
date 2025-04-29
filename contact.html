@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+                
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+      <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Daniel Okpechi - UI/UX Designer & Frontend Developer" />
+  <meta property="og:description" content="Designing sleek, user-focused experiences with a blend of creativity, strategy, and code." />
+  <meta property="og:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/e3bfb8c2-6f52-4175-a752-da18921638f2-Okpechi.png" />
+  <meta property="og:image:alt" content="Okpechi - Profile image of a UI/UX designer and frontend developer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daniel-okpechi-omega.vercel.app" /> <!-- Replace with your actual URL -->
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Okpechi - UI/UX Designer & Frontend Developer" />
+  <meta name="twitter:description" content="Blending design, empathy, and frontend magic to craft seamless digital products." />
+  <meta name="twitter:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/e3bfb8c2-6f52-4175-a752-da18921638f2-Okpechi.png" />
+  <meta name="twitter:image:alt" content="Okpechi - Profile image of a UI/UX designer and frontend developer" />
+  <link rel="shortcut icon" href="imgs/Daniel Okpechi.png" type="image/x-icon">
+</head>
+<body>
+   <!-- Video Background -->
+   <div class="video-background">
+    <video autoplay muted loop id="background-video">
+        <source src="imgs/background.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+</div>
+
+<!-- Header -->
+<header>
+    <div class="navbar">
+      <a href="index.html">
+        <div class="logo">
+            <div class="logo-circle">
+                <span class="logo-plus">+</span>
+            </div>
+            <span class="logo-text">Daniel</span>
+        </div>
+       </a>
+       
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+        
+        <a href="contact.html" class="cta-button">
+            <i data-lucide="phone"></i>
+            Contact
+        </a>
+        
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <i data-lucide="menu" style="color: white;"></i>
+        </button>
+    </div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu">
+    <div class="mobile-menu-header">
+        <div class="logo">
+            <div class="logo-circle">
+                <span class="logo-plus">+</span>
+            </div>
+            <span class="logo-text">Daniel</span>
+        </div>
+        <button class="close-menu" aria-label="Close menu">✕</button>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li class="active">
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <br>
+        <div class="sign-cont" style="text-align: center;">
+            <img src="imgs/Daniel Okpechi.png" width="150px" alt="">
+        </div>
+    </nav>
+</div>
+
+<!-- Main Content -->
+<main>
+  <div class="container2">
+    <section class="contact-section">
+        <!-- Left Column -->
+        <div class="left-column">
+            <div class="section-header">
+                <h2>Let's Collaborate <span>and</span><br>Begin the work</h2>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <i data-lucide="users" class="icon" width="20" height="20"></i>
+                    <h3>100+</h3>
+                    <p>Happy clients</p>
+                </div>
+                <div class="stat-card">
+                    <i data-lucide="dollar-sign" class="icon" width="20" height="20"></i>
+                    <h3>$250m</h3>
+                    <p>revenue added</p>
+                </div>
+                <div class="stat-card">
+                    <i data-lucide="star" class="icon" width="20" height="20"></i>
+                    <h3>4.8</h3>
+                    <p>Average Rating</p>
+                </div>
+            </div>
+
+            <!-- Testimonial Card -->
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="testimonial-avatar">
+                        <img src="https://framerusercontent.com/images/bcAzOFG614oJvNiV0vto1KQKGWs.png?scale-down-to=1024" alt="Ryan Harper">
+                    </div>
+                    <div class="testimonial-info">
+                        <h4>Ryan harper</h4>
+                        <p>Ryan Toys</p>
+                    </div>
+                </div>
+                <div class="rating">
+                    <span>5.0</span>
+                    <span>★★★★★</span>
+                </div>
+                <p class="testimonial-text">
+                    Using this analytics tool has been a game-changer for our team. The
+                    seamless interface and actionable insights make every decision smarter.
+                </p>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="call-to-action">
+                <p>Prefer to book a call?</p>
+                <button class="btn">Do so here</button>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <div class="contact-form-card">
+                <form action="https://submit-form.com/your-formspark-id" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="website">Website (optional)</label>
+                        <input type="url" id="website" name="website" class="form-control" placeholder="Company Website">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        <p class="form-note">(We will reach out to you within 48hrs.)</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+</main>
+
+<div class="contact-container">
+    <section class="contact-section">
+        <!-- Left Column -->
+        <div class="contact-left-column">
+            <div class="contact-connect">
+                <span class="contact-connect-icon"></span>
+                Let's Connect
+            </div>
+
+            <h1 class="contact-heading">Let's Grow <span>Together</span></h1>
+
+            <div class="contact-service">
+                <div class="contact-service-header">
+                    <h2 class="contact-service-title">Web Design</h2>
+                    <span class="contact-service-price">Starting from $1,999</span>
+                </div>
+                <p class="contact-service-description">
+                    Showcasing sleek, high-performance designs tailored for impact
+                </p>
+            </div>
+
+            <div class="contact-service">
+                <div class="contact-service-header">
+                    <h2 class="contact-service-title">Framer Development</h2>
+                    <span class="contact-service-price">Starting from $4,999</span>
+                </div>
+                <p class="contact-service-description">
+                    Building visually stunning, user-focused websites that elevate brands
+                </p>
+            </div>
+
+            <div class="contact-buttons">
+                <a href="#" class="contact-btn contact-btn-secondary">See All Projects</a>
+                <a href="#" class="contact-btn contact-btn-primary">Get Started Now</a>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="contact-right-column">
+            <div class="contact-image-container">
+                <!-- Single portfolio image -->
+                <img src="imgs/project5.png" alt="Portfolio Showcase" class="contact-portfolio-image">
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-container">
+      <div class="cta-section">
+        <div class="footer-info">
+            <h4>Daniel</h4>
+            <p>Lagos, Nigeria</p>
+            <p class="email">
+              <i data-lucide="mail" class="icon-small"></i>
+              daniel-okpechi@gmail.com
+            </p>
+          </div>
+      </div>
+      
+      <div class="footer-content">
+        
+        
+        <div class="footer-social">
+          <a href="#" class="social-icon" aria-label="Behance">
+            <i class="fa-brands fa-behance"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <i data-lucide="instagram" class="icon"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="bottom-blur-bar">
+    
+  </div>
+  
+  <script src="https://kit.fontawesome.com/b95a562003.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
