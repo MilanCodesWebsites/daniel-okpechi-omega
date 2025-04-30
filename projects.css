@@ -627,13 +627,18 @@ header {
   /* Responsive styles */
   @media (max-width: 992px) {
     .container {
-        padding: 80px 1.5rem 1.5rem 1.5rem;
+        padding: 80px 1.5rem 1.5rem  1.5rem;
+       
     }
   
     .hero h1 {
       font-size: 2rem;
     }
   
+    .logo2 {
+      display: none;
+    }
+
     .project-image-container {
       height: 50vh; /* Slightly smaller on medium screens */
     }
