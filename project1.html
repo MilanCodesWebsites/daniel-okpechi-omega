@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Vision Pro Project Section</title>
+  <link rel="stylesheet" href="project.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+                
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+      <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Daniel Okpechi - UI/UX Designer & Frontend Developer" />
+  <meta property="og:description" content="Designing sleek, user-focused experiences with a blend of creativity, strategy, and code." />
+  <meta property="og:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/e3bfb8c2-6f52-4175-a752-da18921638f2-Okpechi.png" />
+  <meta property="og:image:alt" content="Okpechi - Profile image of a UI/UX designer and frontend developer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://daniel-okpechi-omega.vercel.app" /> <!-- Replace with your actual URL -->
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Okpechi - UI/UX Designer & Frontend Developer" />
+  <meta name="twitter:description" content="Blending design, empathy, and frontend magic to craft seamless digital products." />
+  <meta name="twitter:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/e3bfb8c2-6f52-4175-a752-da18921638f2-Okpechi.png" />
+  <meta name="twitter:image:alt" content="Okpechi - Profile image of a UI/UX designer and frontend developer" />
+  <link rel="shortcut icon" href="imgs/Daniel Okpechi.png" type="image/x-icon">
+</head>
+<body>
+
+  <section class="project-section">
+    <div class="project-text">
+      <h1>Apple Vision Pro</h1>
+      <p>
+        s a freelance UI/UX designer, I was tasked with creating a sleek, immersive landing page for the Apple Vision Pro. The focus was on capturing the device’s innovative spirit through bold visuals, clean layout, and responsive design—all while maintaining Apple’s signature aesthetic.
+      </p>
+      <button class="btn">Live Behance Project</button>
+
+      <div class="meta">
+        <div>
+          <span>Client</span>
+          Freelance
+        </div>
+        <div>
+          <span>Service Provided</span>
+          UI/UX Design, Web Design
+        </div>
+      </div>
+    </div>
+
+    <div class="project-image">
+      <img src="imgs/project1.png" alt="AtomAI Preview">
+    </div>
+  </section>
+
+
+  <div class="carousel" id="carousel">
+    <div class="slide active">
+      <h2><i data-lucide="monito-smartphone"></i> Apple Vision Pro</h2>
+      <p>Designed a visually immersive, responsive landing page for the Apple Vision Pro. The aim was to reflect Apple’s futuristic hardware through a clean, minimal interface with bold visuals and intuitive structure—crafted for both mobile and desktop viewing.</p>
+      <img src="imgs/project1.png" alt="AI Dashboard" />
+    </div>
+    <div class="slide">
+      <h2><i data-lucide="target"></i> Project Goal</h2>
+      <p>The goal was to create a product-first experience that immediately communicates the power and uniqueness of spatial computing. The landing page needed to be bold, lightweight, and scalable—capturing attention while clearly explaining benefits.</p>
+      <img src="imgs/project-(1_1).png" alt="Goal Visualization" />
+    </div>
+    <div class="slide">
+      <h2><i data-lucide="lightbulb"></i> The Challenge</h2>
+      <p>One major challenge was conveying the immersive nature of the device through 2D UI. I solved this by leveraging large hero visuals, layered motion elements, and scroll-triggered interactions while keeping page performance optimal.</p>
+      <img src="imgs/project(1_2).png" alt="Challenge Inspiration" />
+    </div>
+    <div class="slide">
+      <h2><i data-lucide="rocket"></i> The Result</h2>
+      <p>The final design delivered a clean, engaging landing page experience that emphasized innovation and clarity. It improved conversion rates, received positive user feedback, and demonstrated best practices in responsive UX/UI design.</p>
+      <img src="imgs/project(1.3).png" alt="Final Result" />
+    </div>
+
+    <div class="nav-buttons">
+      <button id="prev"><i data-lucide="chevron-left"></i></button>
+      <button id="next"><i data-lucide="chevron-right"></i></button>
+    </div>
+
+    <div class="indicators">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    const slides = document.querySelectorAll('.slide');
+    const indicators = document.querySelectorAll('.indicators span');
+    const carousel = document.getElementById('carousel');
+    let currentIndex = 0;
+
+    function updateCarousel(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        indicators[i].classList.remove('active');
+      });
+      slides[index].classList.add('active');
+      indicators[index].classList.add('active');
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel(currentIndex);
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel(currentIndex);
+    });
+
+    // Touch swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+
+    carousel.addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    });
+
+    function handleSwipe() {
+      if (touchEndX < touchStartX - 40) {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateCarousel(currentIndex);
+      }
+      if (touchEndX > touchStartX + 40) {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateCarousel(currentIndex);
+      }
+    }
+  </script>
+  <a href="projects.html" class="go-back-button">Go Back</a>
+</body>
+</html>
