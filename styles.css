@@ -92,7 +92,7 @@ header {
     border-radius: var(--border-radius);
     padding: 0.75rem 1.5rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 700px;
     backdrop-filter: blur(10px);
 }
 
@@ -771,7 +771,7 @@ h1 {
 }
 
 .bio-text {
-    font-size: 1.15rem;
+    font-size: 1.4rem;
     line-height: 1.7;
 }
 
@@ -861,7 +861,9 @@ h1 {
         box-shadow: none;
     }
 
-    
+    .bio-text{
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -895,6 +897,10 @@ h1 {
     .experience-year {
         grid-row: 3;
         font-size: 0.8rem;
+    }
+
+    .cta8{
+        width: 70% !important; 
     }
 }
 
@@ -1339,7 +1345,7 @@ h1 {
 
 .service-card p {
     color: #9e9e9e;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
@@ -1463,7 +1469,7 @@ h1 {
     }
 
     .website-gallery, .framer-gallery{
-        height: 150px;
+        height: 250px;
     }
 }
 
@@ -2313,7 +2319,6 @@ button{
   
   /* Footer styles */
 .footer {
-    background-color: #000;
     color: #fff;
     padding: 4rem 2rem;
     display: flex;
@@ -2621,6 +2626,7 @@ button{
     margin-bottom: 2rem;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
   }
   
   .hero2-badge-icon {
@@ -2765,6 +2771,7 @@ button{
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.25rem;
     animation: float 3s ease-in-out infinite;
+    z-index: 3000;
   }
   
   .hero2-cursor-1 {
@@ -2898,4 +2905,48 @@ button{
     transform: translate(-50%, -50%);
     transition: opacity 0.5s, width 0.3s, height 0.3s;
     z-index: 9998;
+  }
+
+  .testimonial-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 400px;
+    flex: 1 1 300px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .quote-text {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .person-info {
+    margin-top: 0.5rem;
+  }
+
+  .person-name {
+    font-weight: bold;
+    color: #ddd;
+  }
+
+  .person-title {
+    font-size: 0.9rem;
+    color: #aaa;
   }

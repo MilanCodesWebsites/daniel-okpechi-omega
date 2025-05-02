@@ -73,12 +73,12 @@ body {
     justify-content: center;
   }
 
-  .project-image img {
+  /* .project-image img {
     width: 100%;
     max-width: 500px;
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-  }
+  } */
 
   @media (max-width: 768px) {
     .project-section {
@@ -96,146 +96,7 @@ body {
   }
 
 
-  .carousel {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1rem;
-    overflow: hidden;
-  }
-
-  .slide {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  .slide.active {
-    display: flex;
-    opacity: 1;
-  }
-
-  .slide h2 {
-    display: flex;
-    align-items: center;
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-  }
-
-  .slide h2 svg {
-    margin-right: 0.5rem;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  .slide p {
-    max-width: 60%;
-    margin-bottom: 2rem;
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  .slide img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 1px solid #333;
-    margin-top: 1rem;
-  }
-
-  .nav-buttons {
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-  }
-
-  .nav-buttons button {
-    background: #111;
-    color: #fff;
-    border: none;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-buttons button:hover {
-    background: #222;
-  }
-
-  .nav-buttons button svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-  }
-
-  .indicators span {
-    width: 20px;
-    height: 6px;
-    background-color: #444;
-    margin: 0 5px;
-    border-radius: 3px;
-    display: inline-block;
-  }
-
-  .indicators span.active {
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-
-  @media (max-width: 768px) {
-    .carousel {
-      padding: 2rem 1rem;
-    }
-
-    .slide h2 {
-      font-size: 1.5rem;
-    }
-
-    .slide p {
-      max-width: 100%;
-      font-size: 0.9rem;
-    }
-
-    .nav-buttons {
-      padding: 0 1rem;
-    }
-
-    .slide img {
-      max-height: 250px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .slide h2 {
-      font-size: 1.3rem;
-    }
-
-    .nav-buttons button {
-      width: 30px;
-      height: 30px;
-    }
-
-    .nav-buttons button svg {
-      width: 16px;
-      height: 16px;
-    }
-  }
-
+ 
   .go-back-button {
     position: fixed;
     bottom: 4rem;
@@ -257,3 +118,98 @@ body {
     color: #000;
   }
   
+  .project-summary {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .section-title,
+  .section-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 1.2rem 0 0.4rem;
+    font-size: 1.3rem;
+  }
+  
+  .section-text {
+    margin: 0 0 0.8rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .section-title i,
+  .section-subtitle i {
+    color: #ffa500;
+  }
+
+  
+  .image-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: auto;
+  }
+
+  .carousel-cont{
+    padding: 20px;
+  }
+
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+  }
+
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .carousel-button svg {
+    color: white;
+    width: 24px;
+    height: 24px;
+  }
+
+  .carousel-button.prev {
+    left: 16px;
+  }
+
+  .carousel-button.next {
+    right: 16px;
+  }
