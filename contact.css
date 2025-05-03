@@ -536,11 +536,13 @@ header {
     color: var(--text-primary);
     font-size: 1rem;
     /* box-shadow: var(--box-shadow-inset); */
+    font-family: inherit;
 }
 
 textarea.form-control {
     min-height: 120px; /* Reduced height */
     resize: vertical;
+    font-family: inherit;
 }
 
 .form-control:focus {
@@ -760,10 +762,18 @@ textarea.form-control {
     object-fit: cover;
 }
 
+
+.hidden1{
+    display: block;
+}
+.hidden2{
+    display: none;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .contact-section {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .contact-heading {
@@ -772,6 +782,12 @@ textarea.form-control {
     
     .contact-image-container {
         margin-top: 30px;
+    }
+    .hidden2{
+        display: block;
+    }
+    .hidden1{
+        display: none;
     }
 }
 
@@ -795,7 +811,7 @@ textarea.form-control {
     }
 
     .contact-service-header {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: flex-start;
         gap: 5px;
     }

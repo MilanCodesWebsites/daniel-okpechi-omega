@@ -53,7 +53,18 @@
     </div>
 
     <div class="project-image">
-      <img src="imgs/project1.png" style="border-radius: 20px;" width="100%" alt="">
+      <div class="image-carousel" id="myCarousel">
+        <div class="carousel-slide active" style="background-image: url('imgs/project-\(1_1\).png');"></div>
+        <div class="carousel-slide" style="background-image: url('imgs/project\(1_2\).png');"></div>
+        <div class="carousel-slide" style="background-image: url('imgs/project\(1.3\).png');"></div>
+      
+        <button class="carousel-button prev" aria-label="Previous slide">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="carousel-button next" aria-label="Next slide">
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -63,7 +74,7 @@
     <p class="section-text">
       I designed a landing page for the Apple Vision Pro that showcases the device’s innovation through sleek UI and immersive visuals. The goal was to mirror Apple’s minimalism while introducing a bold, responsive experience.
     </p>
-  
+    <img src="imgs/project1.png" style="border-radius: 20px;" width="100%" alt="">
     <h3 class="section-subtitle"><i data-lucide="target"></i> Goal</h3>
     <p class="section-text">
       Create a product-focused page that quickly communicates the Vision Pro’s spatial computing power and benefits. The design needed to feel both premium and approachable.
@@ -73,7 +84,7 @@
     <p class="section-text">
       Translating a 3D immersive product into a 2D interface was the toughest part. I used motion layers, interactive scroll sections, and clean layouts to simulate depth and engagement.
     </p>
-  
+    <img src="imgs/project(1.3).png" style="border-radius: 20px;" width="100%" alt="">
     <h3 class="section-subtitle"><i data-lucide="star"></i> Result</h3>
     <p class="section-text">
       The final product is a fast, visually-rich landing page that aligns with Apple’s branding and improves user engagement. It’s optimized for both performance and aesthetic clarity.
@@ -83,18 +94,7 @@
   
   <div class="carousel-cont">
 
-  <div class="image-carousel" id="myCarousel">
-    <div class="carousel-slide active" style="background-image: url('imgs/project-\(1_1\).png');"></div>
-    <div class="carousel-slide" style="background-image: url('imgs/project\(1_2\).png');"></div>
-    <div class="carousel-slide" style="background-image: url('imgs/project\(1.3\).png');"></div>
   
-    <button class="carousel-button prev" aria-label="Previous slide">
-      <i data-lucide="chevron-left"></i>
-    </button>
-    <button class="carousel-button next" aria-label="Next slide">
-      <i data-lucide="chevron-right"></i>
-    </button>
-  </div>
 </div>
   <script>
     lucide.createIcons();
