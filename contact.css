@@ -339,6 +339,7 @@ header {
     margin: 0 auto;
     background-color: var(--secondary-bg);
     padding-bottom: 20px;
+    max-width: 2200px;
 }
 
 .contact-section {
